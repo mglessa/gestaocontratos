@@ -236,6 +236,10 @@ td img {
 }
 
 .popup {
+    display: none;
+}
+
+.popup.active {
     display: flex;
     flex-direction: column;
     width: 30%;

@@ -3,7 +3,8 @@
 <body>
 
     <section class="section-popup">
-        @include('partials._popup')
+        @include('partials._popup-register')
+        @include('partials._popup-edit')
         @include('partials._popup-files')
     </section>
 
@@ -18,9 +19,9 @@
             <div class="main-tools">
                 <div class="search-box">
                     <input type="text" id="search-input" placeholder="Pesquisar contrato">
-                    <button id="btn-search" class="btn">BUSCAR</button>
-                    <button id="btn-clear" class="btn grey">LIMPAR</button>
-                    <button id="btn-register" class="btn orange">CADASTRAR</button>
+                    <button id="btn-search" class="btn" onclick="searchContracts()">BUSCAR</button>
+                    <button id="btn-clear" class="btn grey" onclick="clearSearch()">LIMPAR</button>
+                    <button id="btn-register" class="btn orange" onclick="openPopup('popup-register')">CADASTRAR</button>
                 </div>
             </div>
             @include('partials._table')
