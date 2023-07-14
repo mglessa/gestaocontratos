@@ -12,7 +12,7 @@
 
             <div class="form-line">
                 <label for="contract-name">Nome</label>
-                <input type="text" id="contract-name--register" name="name" required pattern="^(?![0-9]*$)[A-Za-z ]{3,}$" oninput="sanitizeOnlyTextInput(this)" title="Este campo deve conter pelo menos 3 caracteres não numéricos">
+                <input type="text" id="contract-name--register" name="name" required pattern="^(?![0-9]*$)[A-Za-z ]{3,}$" title="Este campo deve conter pelo menos 3 caracteres não numéricos">
             </div>
 
             <div class="form-line">
@@ -22,11 +22,11 @@
             
             <div class="form-line">
                 <label for="contract-date">Data Assinatura</label>
-                <input type="date" id="contract-date--register" name="date" required>
+                <input type="date" class="contract-date" id="contract-date--register" name="date" required>
             </div>
             
             <div class="form-line buttons">
-                <button class="btn orange" id="btn-send--register">SALVAR</button>
+                <button class="btn orange" id="btn-send--register" onclick="registerContract()">SALVAR</button>
             </div>
         </form>
     </div>

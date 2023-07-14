@@ -3,28 +3,34 @@
         <h2>Anexos</h2>
         <img class="btn-close--popup" src="{{ asset('images/closered.png') }}" onclick="closePopup()"> 
     </div>
-    <form class="contract-form" enctype="multipart/form-data">
-        <form class="contract-form">
+        <form class="files-form">
             <input id="contract-id--files" hidden>
+            <div class="form-line">
+                <label for="document-title" id="contractTitle--files"><label>
+            </div>
+            <hr>
+            
+            <div class="form-files--inputs">
 
-            <label for="document-input" id="document-label">Selecione o arquivo</label>
-            <input type="file" id="document--files" name="pdf_file" accept=".pdf">
+                <div class="form-files--inputs-line">
+                    <label for="document-name">Nome do Arquivo</label>
+                    <input type="text" id="document--name" name="name" required pattern="^(?![0-9]*$)[A-Za-z ]{2,}$" title="Este campo deve conter pelo menos 2 caracteres">
+                    <img id="action-file" class="btn-actions" src="../images/upload.png" title="Enviar arquivo" onclick="uploadDocument()">
+                </div>
 
+                <input type="file" id="document--files" name="pdf_file" accept=".pdf">
+            </div>
             <div class="table-files">
                 <table>
                     <thead>
                         <tr>
                             <th>Documento</th>
-                            <th>Actions</th>
+                            <th>Ações</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="table-files">
                     </tbody>
                 </table>
-            </div>
-
-            <div class="form-line buttons">
-                <button class="btn orange" id="btn-send">SALVAR</button>
             </div>
         </form>
     </div>

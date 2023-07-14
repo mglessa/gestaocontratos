@@ -82,8 +82,7 @@ class ContractsApiController extends Controller
     }
 
     // DELETA O CONTRATO COM BASE NO ID
-    public function delete($id)
-    {
+    public function delete($id) {
         $contract = Contract::find($id);
 
         if (!$contract) {

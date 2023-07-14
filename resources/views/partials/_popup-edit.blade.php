@@ -13,7 +13,7 @@
 
             <div class="form-line">
                 <label for="contract-name">Nome</label>
-                <input type="text" class="readonly-field" id="contract-name--edit" name="name" required pattern="^(?![0-9]*$)[A-Za-z ]{3,}$" oninput="sanitizeOnlyTextInput(this)" readonly>
+                <input type="text" class="readonly-field" id="contract-name--edit" name="name" required pattern="^(?![0-9]*$)[A-Za-z ]{3,}$" readonly>
             </div>
 
             <div class="form-line">
@@ -23,11 +23,11 @@
             
             <div class="form-line">
                 <label for="contract-date">Data Assinatura</label>
-                <input type="date" id="contract-date--edit" name="date" required>
+                <input type="date" class="contract-date" id="contract-date--edit" name="date" required>
             </div>
             
             <div class="form-line buttons">
-                <button class="btn orange" id="btn-send--edit">SALVAR</button>
+                <button class="btn orange" id="btn-send--edit" onclick="updateContract()">SALVAR</button>
             </div>
         </form>
     </div>

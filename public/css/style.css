@@ -169,7 +169,7 @@ header {
 
 .table-contract {
     width: 100%;
-    max-height: 600px; /* Defina a altura máxima desejada */
+    max-height: 600px;
     overflow-y: auto;
     margin-top: 20px;
 }
@@ -181,7 +181,7 @@ table {
 }
 
 .table-files {
-    height: 200px;
+    height: 150px;
     overflow-y: auto;
 }
 
@@ -194,10 +194,15 @@ th{
     font-weight: 600;
 }
 
-.big {
+.table-big {
     width: 40%;
     text-align: left;
     padding-left: 15px;
+}
+
+.table-number{
+    text-align: right;
+    padding-right: 20px;
 }
 
 td {
@@ -221,6 +226,8 @@ td img {
     font-size: 13px;
 }
 
+/* ------------------- POPUP ------------------- */
+
 .section-popup {
     display: none;
     width: 100vw;
@@ -242,8 +249,8 @@ td img {
 .popup.active {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 45%;
+    width: 600px;
+    height: auto;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
@@ -321,7 +328,84 @@ td img {
     margin-bottom: 10px;
 }
 
+#popup-files {
+    width: 600px;
+    height: 550px;
+}
+
+#contractTitle--files{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    color: #06283d;
+}
+
+.form-files--inputs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 15px;
+}
+
+.form-files--inputs-line {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-files--inputs label {
+    width: 30%;
+    height: 30px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #06283d;
+}
+
+#document--name {
+    width: 60%;
+    height: 30px;
+}
+
+.form-files--inputs-line img {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.form-files--inputs-line img:hover {
+    transform: scale(1.1);
+}
+
+#document--files {
+    margin-top: 15px;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    background-color: #dddddd9c;
+    border: 2px dashed #aaaaaaac;
+    padding: 10px;
+}
 
 
+    /* Estilos para telas menores que 1020px */
+    @media (max-width: 1020px) {
 
+        .main-table {
+            font-size: 13px;
+        }
+
+        .main-table td img {
+            width: 20px;
+            margin: 5px 5px;
+            cursor: pointer;
+        }
+    }
 

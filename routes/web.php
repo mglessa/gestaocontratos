@@ -15,4 +15,5 @@ use App\Http\Controllers\ContractsController;
 */
 
 Route::get('/', [ContractsController::class, 'index']);
-Route::get('/popup', [ContractsController::class, 'OpenPopUp']);
+Route::get('/view/files/{filename}', [ContractsController::class, 'viewPDF']);
+Route::get('/download/files/{filename}', [ContractsController::class, 'downloadPDF']);
