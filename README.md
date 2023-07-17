@@ -24,10 +24,13 @@ No frontend a navegação, estruturação da página, captação dados e comunic
 # Requisitos
 
 - **XAMPP:** Certifique-se de ter o XAMPP instalado em sua máquina. Ele fornece o servidor web Apache e o banco de dados MySQL necessários para executar o sistema.
+- **Composer**
 
 # Configuração
 
-*1. Extraia o arquivo no diretório htdocs do seu XAMPP.*
+*1. Navegue no terminal até o diretório htdocs do XAMPP e execute o seguinte comando:*
+
+    git clone https://github.com/mglessa/gestaocontratos
 
 *2. Inicie o servidor Apache e o MySQL no XAMPP.*
 
