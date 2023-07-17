@@ -25,6 +25,7 @@ No frontend a navegação, estruturação da página, captação dados e comunic
 
 - **XAMPP:** Certifique-se de ter o XAMPP instalado em sua máquina. Ele fornece o servidor web Apache e o banco de dados MySQL necessários para executar o sistema.
 - **Composer**
+- **GIT**
 
 # Configuração
 
