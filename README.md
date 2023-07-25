@@ -23,7 +23,7 @@ No frontend a navegação, estruturação da página, captação dados e comunic
 
 # Requisitos
 
-- **XAMPP:** Certifique-se de ter o XAMPP instalado em sua máquina. Ele fornece o servidor web Apache e o banco de dados MySQL necessários para executar o sistema.
+- **XAMPP:**
 - **Composer**
 - **GIT**
 
@@ -57,19 +57,10 @@ No frontend a navegação, estruturação da página, captação dados e comunic
     # Execute as migrações do banco de dados
     php artisan migrate
 
-*6. O sistema agora está configurado e pronto para ser executado.*
-
-# Executando o Sistema
-
-*1. Inicie o servidor Apache e o MySQL no XAMPP.*
-
-*2. No terminal, navegue até o diretório do projeto.*
-
-*3. Execute o seguinte comando para iniciar o servidor de desenvolvimento do Laravel:*
-
+    # Execute o sistema
     php artisan serve
 
-*4. Abra um navegador da web e acesse http://localhost:8000 para acessar o sistema.*
+*6. Abra um navegador da web e acesse http://localhost:8000 para acessar o sistema.*
 
 # Agradecimento
 Agradeço a todos a oportunidade de participar deste processo seletivo, principalmente nesta etapa que sou desafiado a colocar em prática o que venho tanto estudando.

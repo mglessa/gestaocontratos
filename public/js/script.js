@@ -300,7 +300,7 @@ async function deleteContract(contractId) {
   if (confirmDelete) {
 
     // Exclui todos os arquivos do contrato, caso exista
-     await deleteAllFiles(contractId);
+    //  await deleteAllFiles(contractId);
 
     // Envia a requisição para a exclusão do contrato
     fetch(endpoint, {

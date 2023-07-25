@@ -23,9 +23,4 @@ Route::get('/files/list/{contractId}', [FilesApiController::class, 'index']);
 Route::get('/files/{id}', [FilesApiController::class, 'findOne']);
 Route::post('/files', [FilesApiController::class, 'uploadFile']);
 Route::delete('/files/{id}', [FilesApiController::class, 'deleteFile']);
-Route::delete('/files/list/{contractId}', [FilesApiController::class, 'deleteAllFiles']);
-
-// Route::post('/files/upload', [FilesApiController::class, 'uploadFile']);
-// Route::get('/files/download/{id}', 'FilesApiController@download');
-// Route::get('/files/view/{id}', 'FilesApiController@view');
-
+Route::delete('/files/list/{contractId}', [FilesApiController::class, 'deleteAllFiles']);   
